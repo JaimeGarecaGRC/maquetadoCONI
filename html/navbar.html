@@ -25,9 +25,11 @@
     }
 
     nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: 1;
+         align-items: center;
+        width: 100%;
         background: linear-gradient(to right, var(--primaryBlue), var(--secondaryBlue));
     }
 
@@ -37,9 +39,13 @@
         margin-right: 80px;
     }
 
+    .navbar-center{
+        justify-self: center;
+    }
+
     .consult-input{
-        height: 50px;
-        width: 400px;
+        height: 45px;
+        width: 25vw;
         border-radius: 8px;
 
     }
@@ -47,9 +53,8 @@
     .navbar-right{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
- 
 
     .navbar-right a img{
         width: 50px;

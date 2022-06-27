@@ -29,6 +29,7 @@
 
     .menu-left{
         position: absolute;
+        height: 100%;
         left: 0;
         background-color: var(--terciaryBlue);    
     }
@@ -36,7 +37,6 @@
     .menu-left-container{
         display: flex;
         flex-direction: column;
-
     }
 
     .menu-left-container a{
@@ -44,12 +44,19 @@
         flex-direction: column;
         padding: 20px 30px;
         border-style: solid;
-        border-radius: 4px;
         border-color: var(--neutralBlue);
         text-decoration: none;
+        border-collapse: collapse;
+        border-right-width: 6px;
     }
 
-        
+    /* hr{
+        width: 100%;
+        border: 3px solid black;
+    } */
+
+
+    /* Poner HR (etiqueta) debajo de cada etiqueta 'a' y este modificarlo (averiguar) */
 
     </style>
 </head>
@@ -58,6 +65,7 @@
         <div class="menu-left-container">
             <p>menu</p>
             <a href="/">Articulos</a>
+            <hr />
             <a href="/">Categoria</a>
             <a href="/">Areas</a>
             <a href="/">Tickets</a>

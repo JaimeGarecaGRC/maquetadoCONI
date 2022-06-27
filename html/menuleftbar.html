@@ -14,6 +14,7 @@
         --secondaryBlue: #0E9BD4;
         --terciaryBlue: #89C1DA;
         --neutralBlue: #0A6288;
+        --gray: #CDCDCD;
         --text-input-field: #FFFFFF;
         --white: #FFFFFF;
         --black: #000000;
@@ -39,41 +40,63 @@
         flex-direction: column;
     }
 
+    .menu-left-container p{
+        color: var(--gray);
+        text-align: center;
+    }
+
     .menu-left-container a{
-        display: flex;
-        flex-direction: column;
-        padding: 20px 30px;
+        padding: 18px 30px;
         border-style: solid;
         border-color: var(--neutralBlue);
         text-decoration: none;
-        border-collapse: collapse;
-        border-right-width: 6px;
+        border-collapse: collapse;   
+        border-width: 0px;
+        border-right-width: 6px;      
     }
 
-    /* hr{
-        width: 100%;
-        border: 3px solid black;
-    } */
+    .menu-left-container hr{
+        background-color: var(--neutralBlue);
+        width: 170px;
+        height: 6px;
+        margin: 0;
+        border: 0;
+    }
 
-
-    /* Poner HR (etiqueta) debajo de cada etiqueta 'a' y este modificarlo (averiguar) */
-
+    .closebar{
+        width: 40px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
     </style>
 </head>
 <body>
     <div class="menu-left">
         <div class="menu-left-container">
-            <p>menu</p>
+            
+            <p>MENU</p>
+            <hr />
             <a href="/">Articulos</a>
             <hr />
             <a href="/">Categoria</a>
+            <hr />
             <a href="/">Areas</a>
+            <hr />
             <a href="/">Tickets</a>
+            <hr />
             <a href="/">Comentarios</a>
+            <hr />
             <a href="/">Usuarios</a>
+            <hr />
             <a href="/">Grupos</a>
+            <hr />
             <a href="/">Dashboard</a>
+            <hr />
         </div>
+        <a href="/">
+            <img src="../icons/closebar.svg" alt="cerrar" class="closebar">
+        </a>
     </div>
 </body>
 </html>

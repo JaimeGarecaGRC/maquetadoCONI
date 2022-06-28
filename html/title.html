@@ -12,6 +12,10 @@
     :root{
         --primaryBlue: #38629C;
         --secondaryBlue: #0E9BD4;
+        --terciaryBlue: #89C1DA;
+        --neutralBlue: #0A6288;
+        --lightBlue: #C1EAFC;
+        --gray: #6464647a;
         --text-input-field: #FFFFFF;
         --white: #FFFFFF;
         --black: #000000;
@@ -19,18 +23,45 @@
         --md: 18px;
         --bg: 20px;
     }
+    
     body{
         margin: 0;
         font-family: 'Roboto',sans-serif;
     }
+
+    .title{
+        background-color: var(--lightBlue);
+    }
+
+    .title-container{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 3vw;
+    }
+
+    .title-icon{
+        width: 50px;
+    }
+
+    .title-txt{
+        padding-left: 0.5vw;
+    }
+
+    .updated-txt{
+        padding-top: 22px;
+        padding-left: 0.2vw;
+        color: var(--gray);
+    }
+    
+
     </style>
 </head>
 <body>
     <div class="title">
         <div class="title-container">
-            <img src="" alt="title-icon">
+            <img src="../icons/title-icon.svg" alt="title-icon" class="title-icon">
             <h1 class="title-txt">Titulo</h1>
-            <p class="updated-txt">Actualizado hace ...dias</p>
+            <p class="updated-txt">/ Actualizado hace ...dias</p>
         </div>
     </div>
 </body>

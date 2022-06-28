@@ -25,15 +25,17 @@
         }
         
         body{
+
             margin: 0;
             font-family: 'Roboto',sans-serif;
         }
 
-        
+    
         .resultado{
             display: flex;
             justify-content: center;
             align-items: stretch;
+            
         }
 
         .resultado h2{
@@ -51,17 +53,24 @@
             padding-top: 5px;
             font-size: var(--sm);
         }
+        .busqueda-resultado-container{
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
         .busqueda-resultado-container hr{
+            justify-content: center;
+            align-items: center;
             background-color: var(--secondaryBlue);
             margin: 20px 25vw;
             height: 5px;
-            border: 0;
+            border: 0          
         }
 
     </style>
 </head>
 <body>
-    <div class="busqueda-resultado">
+    <div clas="busqueda-resultado">
         <div class="busqueda-resultado-container">
             <div class="resultado">
                 <h2>Titulo</h2>

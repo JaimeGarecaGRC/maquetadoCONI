@@ -31,7 +31,7 @@
         .create-user-container{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-areas:
                 ". . . . . ."
                 ". profile name name-input name-input ."
@@ -60,6 +60,14 @@
             margin: 2vw 3vw;
             border-radius: 10px;
             border-color: var(--neutralBlue);
+        }
+
+        .create-user-container hr{
+            background-color: var(--neutralBlue);
+            width: 70vw;
+            height: 6px;
+            margin: 0;
+            border: 0;
         }
 
         .create-user-container :nth-child(1){
@@ -114,7 +122,10 @@
         .create-user-container :nth-child(13){
             grid-area: charge-input;
         }
-        
+
+        .create-user-container :nth-child(14){
+            grid-area: hr-gr;
+        }
 
     </style>
 
@@ -135,7 +146,8 @@
             <p>Telefono:</p>
             <input type="text" class="telefono-input" /> 
             <p>Cargo:</p>
-            <input type="text" class="cargo-input" />           
+            <input type="text" class="cargo-input" />       
+            <hr />    
         </div>
     </div>
 </body>

@@ -27,6 +27,97 @@
             margin: 0;
             font-family: 'Roboto',sans-serif;
         }
+
+        .create-user-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                ". . . . . ."
+                ". profile name name-input name-input ."
+                ". profile id id-output id-output ."
+                ". group group-input group-input . ."
+                ". email email-input  email-input  . ."
+                ". phone phone-input  phone-input  . ."
+                ". charge charge-input charge-input . ."
+                ". . . . . ."
+                ". hr-gr hr-gr hr-gr hr-gr ."
+                ". . . . . ."
+            ;
+        }
+
+        .create-user{
+            margin: 1fr 2fr;
+        }
+
+        .create-user-container p{
+            margin: auto;
+            font-size: 32px;
+            text-align: justify;
+        }
+
+        .create-user-container input{
+            margin: 2vw 3vw;
+            border-radius: 10px;
+            border-color: var(--neutralBlue);
+        }
+
+        .create-user-container :nth-child(1){
+            grid-area: profile;
+            width: 100%;
+            
+        }
+
+        .create-user-container :nth-child(2){
+            grid-area: name;
+        }
+
+        .create-user-container :nth-child(3){
+            grid-area: name-input;
+        }
+
+        .create-user-container :nth-child(4){
+            grid-area: id;
+        }
+
+        .create-user-container :nth-child(5){
+            grid-area: id-output;
+        }
+        .create-user-container :nth-child(6){
+            grid-area: group;
+        }
+
+        .create-user-container :nth-child(7){
+            grid-area: group-input;
+        }
+
+        .create-user-container :nth-child(8){
+            grid-area: email;
+        }
+
+        .create-user-container :nth-child(9){
+            grid-area: email-input;
+        }
+
+        .create-user-container :nth-child(10){
+            grid-area: phone;
+        }
+
+        .create-user-container :nth-child(11){
+            grid-area: phone-input;
+        }
+
+        .create-user-container :nth-child(12){
+            grid-area: charge;
+        }
+        
+        .create-user-container :nth-child(13){
+            grid-area: charge-input;
+        }
+        
+
+    </style>
+
     </style>
 </head>
 <body>
@@ -34,11 +125,13 @@
         <div class="create-user-container">
             <img src="../icons/profile.svg" alt="profile-picture" class="profile-picture" />
             <p>Nombre:</p>
-            <input type="text                                                   " class="nombre-input" />      
+            <input type="text" class="nombre-input"                     />      
             <p>ID:</p>  
             <p>9999999999</p>
             <p>Grupos:</p>
             <input type="text" class="categoria-input" /> 
+            <p>email:</p>
+            <input type="text" class="email-input" /> 
             <p>Telefono:</p>
             <input type="text" class="telefono-input" /> 
             <p>Cargo:</p>
